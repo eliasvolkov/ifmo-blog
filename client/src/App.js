@@ -6,6 +6,7 @@ import './App.css';
 import { Header } from "./components/Header";
 import { Index } from "./pages";
 import { CreatePost } from "./pages/CreatePost";
+import { EditPost } from "./pages/EditPost";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route exact path="/posts" component={Index} />
         <Route exact path="/posts/create" component={CreatePost} />
+        <Route exact path="/posts/edit/:id" component={EditPost} />
         <Redirect exact from='/' to='/posts' />
       </Switch>
     </Router>

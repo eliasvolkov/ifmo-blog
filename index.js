@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 
-app.get('/', async (req,res) => {
-    await res.send('hey')
+app.get('/', async (req, res) => {
+  await res.send('hey')
 });
 connectDB();
 
